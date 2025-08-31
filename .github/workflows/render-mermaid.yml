@@ -25,7 +25,7 @@ jobs:
     - name: Generate SVG
       run: |
         mkdir -p rendered
-        mmdc -i progress.mmd -o rendered/graph.svg --no-sandbox
+        mmdc -i graph.mmd -o rendered/graph.svg -p puppeteer-config.json
 
     - name: Commit & push generated SVG
       run: |
