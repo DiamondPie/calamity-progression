@@ -46,7 +46,6 @@ jobs:
           # 清理旧文件但保留 .git
           git rm -rf . > /dev/null 2>&1 || true
           mkdir -p rendered
-          cp -r rendered/* rendered/
 
           git add rendered/graph.svg
           git commit -m "Update generated SVG" || echo "No changes to commit"
