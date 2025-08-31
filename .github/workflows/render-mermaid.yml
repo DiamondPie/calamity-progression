@@ -30,7 +30,7 @@ jobs:
       - name: Generate SVG
         run: |
           mkdir -p rendered
-          mmdc -i progress.mmd -o rendered/graph.svg -p puppeteer-config.json
+          mmdc -i progress.mmd -o rendered/graph.svg -p puppeteer-config.json --backgroundColor transparent
 
       - name: Push to output branch
         env:
