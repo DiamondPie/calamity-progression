@@ -49,4 +49,4 @@ jobs:
 
           git add rendered/graph.svg
           git commit -m "Update generated SVG" || echo "No changes to commit"
-          git push origin output --force
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git output --force
