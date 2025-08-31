@@ -25,7 +25,7 @@ jobs:
     - name: Generate SVG
       run: |
         mkdir -p rendered
-        mmdc -i progress.mmd -o rendered/graph.svg
+        mmdc -i progress.mmd -o rendered/graph.svg --no-sandbox
 
     - name: Commit & push generated SVG
       run: |
